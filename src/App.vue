@@ -251,8 +251,9 @@ export default {
   mounted() {
     this.loading = true;
     axios
-      .get("https://ipinfo.io/json")
+      .get("https://ipinfo.io?token=89af06fe6117f8")
       .then((response) => {
+        response = response.json();
         const city = response.data.city;
         const apiKey = "e81c2a0f775eeea447f275a781828331";
         return axios.get(
