@@ -292,7 +292,7 @@ export default {
 <template>
   <div class="wrapper">
     <div class="big-image">
-      <img src="./images/world.svg" alt="" class="bgImage" />
+      <img src="./images/world.jpg" alt="" class="bgImage" />
     </div>
     <div class="header">
       <div class="header-spreadsheet-wrapper">
@@ -844,7 +844,7 @@ button:focus {
   }
 
   .button-text {
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
