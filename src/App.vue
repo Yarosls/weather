@@ -251,12 +251,12 @@ export default {
   mounted() {
     this.loading = true;
     axios
-      .get("http://ip-api.com/json")
+      .get("https://ip-api.com/json")
       .then((response) => {
         const city = response.data.city;
         const apiKey = "e81c2a0f775eeea447f275a781828331";
         return axios.get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
         );
       })
       .then((response) => {
